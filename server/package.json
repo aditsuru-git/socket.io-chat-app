@@ -1,0 +1,34 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"build": "rimraf dist && npx tsc",
+		"postbuild": "npx prettier \"**/*.{ts,js,json,html,css,md}\" --write",
+		"prestart": "npm run build",
+		"prestart:dev": "npm run build",
+		"start": "node dist/index.js",
+		"start:dev": "node dist/index.js",
+		"format": "npx prettier \"src/**/*.ts\" --write",
+		"dev": "nodemon"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@types/cors": "^2.8.17",
+		"@types/express": "^5.0.1",
+		"@types/socket.io": "^3.0.1",
+		"nodemon": "^3.1.9",
+		"prettier": "^3.5.3",
+		"rimraf": "^6.0.1",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.8.3"
+	},
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^5.1.0",
+		"socket.io": "^4.8.1"
+	}
+}
