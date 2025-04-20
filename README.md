@@ -15,8 +15,7 @@
 
 <div align="center">
   <a href="https://github.com/aditsuru-git/socket.io-chat-app">
-  <!-- Placeholder logo - Consider adding a prompt for this if needed -->
-  <img src="https://raw.githubusercontent.com/aditsuru-git/readme-template/main/assets/icon.png" alt="Logo" width="80" height="80">
+    <img src="https://raw.githubusercontent.com/aditsuru-git/readme-template/main/assets/icon.png" alt="Logo" width="80" height="80">
   </a>
   <h3 align="center">Socket.io Chat App</h3>
 
@@ -35,16 +34,13 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#about-the-project">About The Project</a>
-      
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
-      
     </li>
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    
     <li><a href="#contact">Contact</a></li>
     
   </ol>
@@ -54,65 +50,70 @@
 
 ## About The Project
 
-[//]: # "Add project screenshot if you have one"
+A learning project to understand Socket.IO concepts like rooms and real-time bidirectional communication. Built a basic chat application where users can:
 
-<div align="center"> 
-  <img src="https://github.com/aditsuru-git/readme-template/blob/main/assets/screenshot.png?raw=true" alt="Project Screenshot" width="100%" style="max-width: 800px;"> 
-</div>
+- Join different chat rooms
+- Send real-time messages to room members
+- See messages from other users in real-time
 
-[//]: # "Provide more detail about your project here. Explain the problem it solves and why it's useful."
+Built this to learn Socket.IO fundamentals while practicing TypeScript!
 
 ### Built With
 
 [![TypeScript][TypeScript-badge]][TypeScript-url]
+[![Vite][Vite-badge]][Vite-url]
+[![Socket.io][Socket.io-badge]][Socket.io-url]
 
 <!-- GETTING STARTED -->
 
 ## Getting Started
 
-This section should list any major prerequisites and provide simple steps to get the project running locally.
-
 ### Prerequisites
 
-- [//]: # "List any software dependencies, e.g., npm, python, specific versions"
-  ```sh
-  npm install npm@latest -g
-  ```
+- Node.js 18+
+- npm
 
 ### Installation
 
-1.  Clone the repo
-    ```sh
-    git clone https://github.com/aditsuru-git/socket.io-chat-app.git
-    ```
-2.  Install NPM packages (or other dependencies)
-    ```sh
-    npm install
-    ```
-3.  [//]: # "Add any other setup steps like environment variables, database setup, etc."
+1. Clone the repo
+
+```sh
+git clone https://github.com/aditsuru-git/socket.io-chat-app.git
+cd socket.io-chat-app
+```
+
+2. Install dependencies for both client and server
+
+```sh
+# Install server dependencies
+cd server
+npm install
+
+# Install client dependencies
+cd ../client
+npm install
+```
+
+3. Start the application
+
+```sh
+# Terminal 1 - Start server
+cd server
+npm run dev
+
+# Terminal 2 - Start client
+cd client
+npm run dev
+```
 
 <!-- USAGE EXAMPLES -->
 
 ## Usage
 
-[//]: # "Provide instructions and examples for use. Include screenshots or code blocks as needed."
-
-_For more examples, please refer to the [Documentation](link/to/your/docs)_ <!-- Link this if you have separate docs -->
-
-<!-- CONTRIBUTING -->
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1.  Fork the Project
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  Open a Pull Request
+1. Open http://localhost:5173 in your browser
+2. Enter a room name and click "Join Room"
+3. Open another browser window and join the same room
+4. Start chatting!
 
 <h1></h1>
 <div align="center">
@@ -130,8 +131,9 @@ Don't forget to give the project a star! Thanks again!
 [stars-url]: https://github.com/aditsuru-git/socket.io-chat-app/stargazers
 [issues-shield]: https://img.shields.io/github/issues/aditsuru-git/socket.io-chat-app.svg?style=for-the-badge
 [issues-url]: https://github.com/aditsuru-git/socket.io-chat-app/issues
-
-<!-- BUILT WITH BADGES - Reference links used by the multiselect values -->
-
 [TypeScript-badge]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=TypeScript&logoColor=white
 [TypeScript-url]: https://www.TypeScriptlang.org/
+[Vite-badge]: https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white
+[Vite-url]: https://vitejs.dev/
+[Socket.io-badge]: https://img.shields.io/badge/Socket.io-black?style=for-the-badge&logo=socket.io&badgeColor=010101
+[Socket.io-url]: https://socket.io/
